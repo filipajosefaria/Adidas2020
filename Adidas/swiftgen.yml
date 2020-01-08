@@ -1,0 +1,6 @@
+output_dir: Adidas/Resources/Generated
+strings:
+  inputs: Adidas/Resources/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: L10n.swift

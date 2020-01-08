@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Adidas
+
+  Created by BOLD on 08/01/2020.
+  Copyright © 2020 BOLD. All rights reserved.
+*/
+
+
+"menu.title" = "Adidas Health";
+"menu.button.profile" = "View Profile";
+"menu.cell.new_workout" = "Tap to start a new workout";

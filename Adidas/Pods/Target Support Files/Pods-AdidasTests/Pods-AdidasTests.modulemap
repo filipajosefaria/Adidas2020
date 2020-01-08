@@ -1,0 +1,6 @@
+framework module Pods_AdidasTests {
+  umbrella header "Pods-AdidasTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
