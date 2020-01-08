@@ -8,3 +8,5 @@
 
 
 "menu.title" = "Adidas Health";
+"menu.button.profile" = "View Profile";
+"menu.cell.new_workout" = "Tap to start a new workout";

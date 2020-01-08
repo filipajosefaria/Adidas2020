@@ -15,6 +15,14 @@ internal enum L10n {
   internal enum Menu {
     /// Adidas Health
     internal static let title = L10n.tr("Localizable", "menu.title")
+    internal enum Button {
+      /// View Profile
+      internal static let profile = L10n.tr("Localizable", "menu.button.profile")
+    }
+    internal enum Cell {
+      /// Tap to start a new workout
+      internal static let newWorkout = L10n.tr("Localizable", "menu.cell.new_workout")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
