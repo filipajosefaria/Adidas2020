@@ -46,6 +46,11 @@ internal enum L10n {
       internal static let newWorkout = L10n.tr("Localizable", "menu.cell.new_workout")
     }
   }
+
+  internal enum Profile {
+    /// My Profile
+    internal static let title = L10n.tr("Localizable", "profile.title")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

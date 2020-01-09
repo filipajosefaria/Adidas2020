@@ -29,6 +29,9 @@
                                     <constraint firstAttribute="width" secondItem="hPy-6w-DEA" secondAttribute="height" multiplier="187:25" id="Cq1-GS-7X0"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="vUZ-43-Cps" kind="show" id="TrF-dS-rb2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -43,7 +46,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qOi-55-GhC"/>
+                    <navigationItem key="navigationItem" id="qOi-55-GhC">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Fht-Zm-thW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="profileButton" destination="hPy-6w-DEA" id="grV-ID-YUr"/>
                         <outlet property="workoutTableView" destination="iQW-wF-5Z8" id="892-lC-a0A"/>
@@ -52,6 +57,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="u8l-MG-dxe">
+            <objects>
+                <viewController id="vUZ-43-Cps" customClass="ProfileViewController" customModule="Adidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4S-Ex-EkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tt1-k7-PVz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UNq-Kw-UnM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-9w-iYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qRR-fQ-lfl">
