@@ -52,11 +52,29 @@
                     <connections>
                         <outlet property="profileButton" destination="hPy-6w-DEA" id="grV-ID-YUr"/>
                         <outlet property="workoutTableView" destination="iQW-wF-5Z8" id="892-lC-a0A"/>
+                        <segue destination="XOM-0e-DCN" kind="show" identifier="newWorkoutSegue" id="HOA-XG-HHl"/>
+                        <segue destination="h6y-mO-u3l" kind="show" identifier="newGoalSegue" id="ObH-j1-eVB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--New Workout View Controller-->
+        <scene sceneID="WcL-om-YC7">
+            <objects>
+                <viewController id="XOM-0e-DCN" customClass="NewWorkoutViewController" customModule="Adidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xhx-dW-m0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="z6R-ca-rzO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xmf-Up-s0O"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REO-IT-i4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="-578"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="u8l-MG-dxe">
@@ -92,6 +110,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-9w-iYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1951" y="113"/>
+        </scene>
+        <!--New Goal View Controller-->
+        <scene sceneID="7oA-wr-3fZ">
+            <objects>
+                <viewController id="h6y-mO-u3l" customClass="NewGoalViewController" customModule="Adidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L9q-Xe-wXL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-Xa-fEY">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h6y-mO-u3l" id="oTu-ry-LKz"/>
+                                    <outlet property="delegate" destination="h6y-mO-u3l" id="LrM-nw-UWg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ws-ZG-GdQ" firstAttribute="trailing" secondItem="GeI-Xa-fEY" secondAttribute="trailing" constant="10" id="NDc-yw-MoT"/>
+                            <constraint firstItem="GeI-Xa-fEY" firstAttribute="top" secondItem="9Ws-ZG-GdQ" secondAttribute="top" constant="10" id="Og1-m0-6Zf"/>
+                            <constraint firstItem="GeI-Xa-fEY" firstAttribute="leading" secondItem="9Ws-ZG-GdQ" secondAttribute="leading" constant="10" id="UDh-0e-fjv"/>
+                            <constraint firstItem="9Ws-ZG-GdQ" firstAttribute="bottom" secondItem="GeI-Xa-fEY" secondAttribute="bottom" constant="10" id="fmR-Qj-gm5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Ws-ZG-GdQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tqw-T7-fhG"/>
+                    <connections>
+                        <outlet property="goalsTableView" destination="GeI-Xa-fEY" id="Tpd-56-nKZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pi9-0U-HBp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="842.41071428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qRR-fQ-lfl">

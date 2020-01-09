@@ -53,49 +53,36 @@ class MenuViewController: UIViewController {
         title = L10n.Menu.title.uppercased
         
         profileButton.setTitle(L10n.Menu.Button.profile.uppercased, for: .normal)
-        profileButton.backgroundColor = .darkGray
+        profileButton.backgroundColor = UIColor(hex: 0xE2814D)
         profileButton.setTitleColor(.white, for: .normal)
         profileButton.layer.cornerRadius = 5
         profileButton.titleLabel?.font = .boldSystemFont(ofSize: 20)
         
         workoutTableView.rowHeight = UITableView.automaticDimension
+        workoutTableView.sectionHeaderHeight = 50.0
         workoutTableView.register(cellType: NewWorkoutCell.self)
         workoutTableView.register(cellType: WorkoutCell.self)
+        workoutTableView.register(cellType: SetGoalCell.self)
+        workoutTableView.register(cellType: GoalCell.self)
     }
 
 }
 
-extension MenuViewController: UITableViewDataSource {
+extension MenuViewController: NewGoalDelegate {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+    func newGoalSetted() {
+        workoutTableView.reloadData()
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.section {
-        case 0:
-            let cell = tableView.dequeue(indexPath, cellType: NewWorkoutCell.self)
-            return cell
-        default:
-            let cell = tableView.dequeue(indexPath, cellType: WorkoutCell.self)
-            return cell
-        }
-    }
-    
 }
 
-extension MenuViewController: UITableViewDelegate {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
+extension MenuViewController {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.section {
-        case 0:
-            print("New workout")
-        default:
-            print("Display workout")
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier,
+            identifier == Constants.segue.newGoal,
+            let destination = segue.destination as? NewGoalViewController else {
+                return
         }
+        destination.delegate = self
     }
 }

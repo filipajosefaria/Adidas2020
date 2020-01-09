@@ -3,11 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		168B609770D8879B828E038E /* Pods_Adidas_AdidasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B2F7B98A6DEAA517ABF7C /* Pods_Adidas_AdidasUITests.framework */; };
+		6D725A0F23C776AE0043FC1B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A0E23C776AE0043FC1B /* NetworkService.swift */; };
+		6D725A1123C7794F0043FC1B /* GoalsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1023C7794F0043FC1B /* GoalsResponse.swift */; };
+		6D725A1423C77B550043FC1B /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */; };
+		6D725A1623C77C9C0043FC1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1523C77C9C0043FC1B /* Constants.swift */; };
+		6D725A1923C77E580043FC1B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1823C77E580043FC1B /* APIEndpoint.swift */; };
+		6D725A1D23C782A50043FC1B /* SetGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1B23C782A50043FC1B /* SetGoalCell.swift */; };
+		6D725A1E23C782A50043FC1B /* SetGoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D725A1C23C782A50043FC1B /* SetGoalCell.xib */; };
+		6D725A2023C7854F0043FC1B /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */; };
+		6D725A2323C7874F0043FC1B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2223C7874F0043FC1B /* UIViewController.swift */; };
+		6D725A2723C78EBA0043FC1B /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2523C78EBA0043FC1B /* GoalCell.swift */; };
+		6D725A2823C78EBA0043FC1B /* GoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D725A2623C78EBA0043FC1B /* GoalCell.xib */; };
+		6D725A2A23C78EFC0043FC1B /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */; };
+		6D725A2C23C792A80043FC1B /* GoalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2B23C792A80043FC1B /* GoalServices.swift */; };
+		6D725A2E23C7A8D10043FC1B /* MenuViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */; };
+		6D725A3123C7A94D0043FC1B /* NewGoalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */; };
 		6D72FABE23C7304E00240E0F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FABD23C7304E00240E0F /* ProfileViewController.swift */; };
 		6D72FAC523C7342800240E0F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAC323C7342800240E0F /* ProfileCell.swift */; };
 		6D72FAC623C7342800240E0F /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D72FAC423C7342800240E0F /* ProfileCell.xib */; };
@@ -16,6 +31,10 @@
 		6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */; };
 		6D72FAD023C74FF000240E0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACF23C74FF000240E0F /* Date.swift */; };
 		6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */; };
+		6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */; };
+		6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */; };
+		6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C923C7DD5B00FCABCA /* UIView.swift */; };
+		6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CB23C7E15000FCABCA /* UIColor.swift */; };
 		6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */; };
 		6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */; };
 		6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */; };
@@ -62,6 +81,21 @@
 		3A3F3B15E41B449104FCEE60 /* Pods-Adidas-AdidasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adidas-AdidasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F2F7D9BD134AAEB40BA9512 /* Pods-AdidasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdidasTests.release.xcconfig"; path = "Target Support Files/Pods-AdidasTests/Pods-AdidasTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BE4C0793A312AB9E1B2C5FD /* Pods_AdidasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdidasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D725A0E23C776AE0043FC1B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6D725A1023C7794F0043FC1B /* GoalsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsResponse.swift; sourceTree = "<group>"; };
+		6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
+		6D725A1523C77C9C0043FC1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D725A1823C77E580043FC1B /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		6D725A1B23C782A50043FC1B /* SetGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalCell.swift; sourceTree = "<group>"; };
+		6D725A1C23C782A50043FC1B /* SetGoalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetGoalCell.xib; sourceTree = "<group>"; };
+		6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalViewController.swift; sourceTree = "<group>"; };
+		6D725A2223C7874F0043FC1B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		6D725A2523C78EBA0043FC1B /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		6D725A2623C78EBA0043FC1B /* GoalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCell.xib; sourceTree = "<group>"; };
+		6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		6D725A2B23C792A80043FC1B /* GoalServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServices.swift; sourceTree = "<group>"; };
+		6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+UITableView.swift"; sourceTree = "<group>"; };
+		6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalProtocol.swift; sourceTree = "<group>"; };
 		6D72FABD23C7304E00240E0F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6D72FAC323C7342800240E0F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		6D72FAC423C7342800240E0F /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
@@ -70,6 +104,10 @@
 		6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitServices+Profile.swift"; sourceTree = "<group>"; };
 		6D72FACF23C74FF000240E0F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellViewModel.swift; sourceTree = "<group>"; };
+		6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		6DCAA7C923C7DD5B00FCABCA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6DCAA7CB23C7E15000FCABCA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6DEC090223C68B1B00A81DF1 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +182,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D725A0D23C775D80043FC1B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1723C77E480043FC1B /* Enums */,
+				6D725A0E23C776AE0043FC1B /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6D725A1223C77B3C0043FC1B /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		6D725A1723C77E480043FC1B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1823C77E580043FC1B /* APIEndpoint.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6D725A1A23C782760043FC1B /* SetGoal */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1B23C782A50043FC1B /* SetGoalCell.swift */,
+				6D725A1C23C782A50043FC1B /* SetGoalCell.xib */,
+			);
+			path = SetGoal;
+			sourceTree = "<group>";
+		};
+		6D725A2123C785530043FC1B /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		6D725A2423C78E9C0043FC1B /* GoalCell */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A2523C78EBA0043FC1B /* GoalCell.swift */,
+				6D725A2623C78EBA0043FC1B /* GoalCell.xib */,
+			);
+			path = GoalCell;
+			sourceTree = "<group>";
+		};
+		6D725A2F23C7A92E0043FC1B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D725A3223C7AB630043FC1B /* GoalServices */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A2B23C792A80043FC1B /* GoalServices.swift */,
+			);
+			path = GoalServices;
+			sourceTree = "<group>";
+		};
 		6D72FABC23C7303500240E0F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				6D72FAC823C73C7200240E0F /* HealthProfile.swift */,
+				6D725A1023C7794F0043FC1B /* GoalsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +298,18 @@
 			children = (
 				6D72FACB23C73C9F00240E0F /* ProfileViewModel.swift */,
 				6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */,
+				6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6DCAA7C423C7DBFD00FCABCA /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */,
+				6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */,
+			);
+			path = HeaderViews;
 			sourceTree = "<group>";
 		};
 		6DEC08F923C68B1B00A81DF1 = {
@@ -225,6 +341,7 @@
 				6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */,
 				6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */,
 				6DEC095323C6A52900A81DF1 /* Services */,
+				6D725A2F23C7A92E0043FC1B /* Protocols */,
 				6D72FAC723C73C5F00240E0F /* Models */,
 				6D72FACA23C73C8600240E0F /* ViewModels */,
 				6DEC094223C69A4900A81DF1 /* Views */,
@@ -261,8 +378,10 @@
 		6DEC093523C68DB500A81DF1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6D725A1223C77B3C0043FC1B /* Workout */,
 				6D72FABC23C7303500240E0F /* Profile */,
 				6DEC095C23C6B78D00A81DF1 /* Menu */,
+				6D725A2123C785530043FC1B /* Goals */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +391,7 @@
 			children = (
 				6DEC093A23C690D200A81DF1 /* Generated */,
 				6DEC093723C68F1900A81DF1 /* Localizable.strings */,
+				6D725A1523C77C9C0043FC1B /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -291,6 +411,9 @@
 				6DEC094823C69D8900A81DF1 /* UITableView.swift */,
 				6DEC094A23C69DC300A81DF1 /* NSObject.swift */,
 				6D72FACF23C74FF000240E0F /* Date.swift */,
+				6D725A2223C7874F0043FC1B /* UIViewController.swift */,
+				6DCAA7C923C7DD5B00FCABCA /* UIView.swift */,
+				6DCAA7CB23C7E15000FCABCA /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +421,7 @@
 		6DEC094223C69A4900A81DF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DCAA7C423C7DBFD00FCABCA /* HeaderViews */,
 				6DEC094323C69A5200A81DF1 /* TableViewCells */,
 			);
 			path = Views;
@@ -306,6 +430,8 @@
 		6DEC094323C69A5200A81DF1 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				6D725A2423C78E9C0043FC1B /* GoalCell */,
+				6D725A1A23C782760043FC1B /* SetGoal */,
 				6D72FAC223C733FD00240E0F /* Profile */,
 				6D72FAC023C733D400240E0F /* NewWorkout */,
 				6D72FAC123C733ED00240E0F /* Workout */,
@@ -316,6 +442,8 @@
 		6DEC095323C6A52900A81DF1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6D725A3223C7AB630043FC1B /* GoalServices */,
+				6D725A0D23C775D80043FC1B /* Networking */,
 				6DEC095623C6A55900A81DF1 /* HealthKit */,
 			);
 			path = Services;
@@ -342,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */,
+				6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -371,6 +500,7 @@
 				6DEC08FF23C68B1B00A81DF1 /* Frameworks */,
 				6DEC090023C68B1B00A81DF1 /* Resources */,
 				6DEC093923C6903300A81DF1 /* Run Swiftgen */,
+				2C1D435FEED64EA21001A02F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,6 +538,7 @@
 				6DEC091F23C68B1C00A81DF1 /* Sources */,
 				6DEC092023C68B1C00A81DF1 /* Frameworks */,
 				6DEC092123C68B1C00A81DF1 /* Resources */,
+				7829726107869D10E93D6978 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,12 +599,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEC091223C68B1C00A81DF1 /* LaunchScreen.storyboard in Resources */,
+				6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */,
 				6DEC093823C68F1900A81DF1 /* Localizable.strings in Resources */,
 				6DEC094723C69A7900A81DF1 /* NewWorkoutCell.xib in Resources */,
 				6D72FAC623C7342800240E0F /* ProfileCell.xib in Resources */,
 				6DEC090F23C68B1C00A81DF1 /* Assets.xcassets in Resources */,
+				6D725A2823C78EBA0043FC1B /* GoalCell.xib in Resources */,
 				6DEC090D23C68B1B00A81DF1 /* Main.storyboard in Resources */,
 				6DEC094F23C69F1A00A81DF1 /* WorkoutCell.xib in Resources */,
+				6D725A1E23C782A50043FC1B /* SetGoalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +628,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C1D435FEED64EA21001A02F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6DEC093923C6903300A81DF1 /* Run Swiftgen */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,6 +662,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		7829726107869D10E93D6978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		93070751660135FF969B0967 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -585,6 +753,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D725A1123C7794F0043FC1B /* GoalsResponse.swift in Sources */,
+				6D725A1623C77C9C0043FC1B /* Constants.swift in Sources */,
+				6D725A1923C77E580043FC1B /* APIEndpoint.swift in Sources */,
+				6D725A1D23C782A50043FC1B /* SetGoalCell.swift in Sources */,
+				6D725A2C23C792A80043FC1B /* GoalServices.swift in Sources */,
 				6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */,
 				6D72FAC523C7342800240E0F /* ProfileCell.swift in Sources */,
 				6DEC094E23C69F1A00A81DF1 /* WorkoutCell.swift in Sources */,
@@ -593,16 +766,27 @@
 				6DEC094B23C69DC300A81DF1 /* NSObject.swift in Sources */,
 				6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */,
 				6D72FAD023C74FF000240E0F /* Date.swift in Sources */,
+				6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */,
 				6DEC093F23C6927600A81DF1 /* String.swift in Sources */,
 				6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */,
+				6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */,
+				6D725A2723C78EBA0043FC1B /* GoalCell.swift in Sources */,
+				6D725A2023C7854F0043FC1B /* NewGoalViewController.swift in Sources */,
 				6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */,
+				6D725A1423C77B550043FC1B /* NewWorkoutViewController.swift in Sources */,
 				6D72FABE23C7304E00240E0F /* ProfileViewController.swift in Sources */,
 				6D72FACC23C73C9F00240E0F /* ProfileViewModel.swift in Sources */,
+				6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */,
 				6DEC094623C69A7900A81DF1 /* NewWorkoutCell.swift in Sources */,
+				6D725A2A23C78EFC0043FC1B /* GoalViewModel.swift in Sources */,
+				6D725A3123C7A94D0043FC1B /* NewGoalProtocol.swift in Sources */,
+				6D725A2323C7874F0043FC1B /* UIViewController.swift in Sources */,
 				6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */,
+				6D725A0F23C776AE0043FC1B /* NetworkService.swift in Sources */,
 				6DEC095923C6AB7F00A81DF1 /* Alert.swift in Sources */,
 				6DEC095523C6A55100A81DF1 /* HealthKitServices.swift in Sources */,
 				6DEC094923C69D8900A81DF1 /* UITableView.swift in Sources */,
+				6D725A2E23C7A8D10043FC1B /* MenuViewController+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,9 @@
 "menu.title" = "Adidas Health";
 "menu.button.profile" = "View Profile";
 "menu.cell.new_workout" = "Tap to start a new workout";
+"menu.cell.set_goal" = "You haven't set any goal yet.\nTAP HERE TO SET YOUR GOAL";
+"menu.header.goal" = "Always remember your goal";
+"menu.header.workouts" = "Your workouts";
 
 "profile.title" = "My Profile";
 "profile.error.getting_profile" = "Something went wrong while getting your profile";
@@ -26,3 +29,5 @@
 "profile.gender.male" = "Male";
 "profile.gender.other" = "Other";
 
+"goals.label.loading" = "Loading your goals";
+"goals.title" = "Select your goal";
