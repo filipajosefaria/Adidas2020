@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GoalViewModel {
+class GoalViewModel: Encodable, Decodable {
     
     public var goaldId: String
     public var titleString: String

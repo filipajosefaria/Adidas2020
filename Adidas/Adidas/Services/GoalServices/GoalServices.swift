@@ -6,7 +6,6 @@
 //  Copyright © 2020 BOLD. All rights reserved.
 //
 
-import UIKit
 import RealmSwift
 
 class GoalServices {

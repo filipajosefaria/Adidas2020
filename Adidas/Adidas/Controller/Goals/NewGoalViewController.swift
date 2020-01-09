@@ -12,6 +12,7 @@ class NewGoalViewController: UIViewController {
 
     @IBOutlet private weak var goalsTableView: UITableView!
     private var goalsInfo: [GoalViewModel] = []
+    public var delegate: NewGoalDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +61,12 @@ extension NewGoalViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedGoal = goalsInfo[indexPath.row].goaldId
+        let selectedGoal = goalsInfo[indexPath.row]
+        if let encoded = try? JSONEncoder().encode(selectedGoal) {
+            UserDefaults.standard.set(encoded, forKey: Constants.UserDefaults.userGoal)
+        }
+        delegate?.newGoalSetted()
+        navigationController?.popViewController(animated: true)
     }
 }
 

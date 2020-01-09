@@ -18,4 +18,8 @@ struct Constants {
     struct API {
         static let url = "https://thebigachallenge.appspot.com/"
     }
+    
+    struct UserDefaults {
+        static let userGoal = "userGoal"
+    }
 }
