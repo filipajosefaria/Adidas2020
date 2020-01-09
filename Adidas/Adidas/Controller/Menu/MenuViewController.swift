@@ -66,6 +66,7 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -80,9 +81,7 @@ extension MenuViewController: UITableViewDataSource {
             let cell = tableView.dequeue(indexPath, cellType: WorkoutCell.self)
             return cell
         }
-       
     }
-    
     
 }
 

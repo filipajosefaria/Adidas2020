@@ -65,10 +65,29 @@
                     <view key="view" contentMode="scaleToFill" id="h4S-Ex-EkJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1bd-YE-5v1">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vUZ-43-Cps" id="hz8-x4-TMy"/>
+                                    <outlet property="delegate" destination="vUZ-43-Cps" id="7BM-3c-QYx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1bd-YE-5v1" firstAttribute="top" secondItem="tt1-k7-PVz" secondAttribute="top" constant="20" id="DsP-ts-Sfd"/>
+                            <constraint firstItem="tt1-k7-PVz" firstAttribute="trailing" secondItem="1bd-YE-5v1" secondAttribute="trailing" constant="20" id="Rhz-fK-grB"/>
+                            <constraint firstItem="tt1-k7-PVz" firstAttribute="bottom" secondItem="1bd-YE-5v1" secondAttribute="bottom" constant="20" id="osC-Zz-fYc"/>
+                            <constraint firstItem="1bd-YE-5v1" firstAttribute="leading" secondItem="tt1-k7-PVz" secondAttribute="leading" constant="20" id="xdN-dW-ipw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tt1-k7-PVz"/>
                     </view>
                     <navigationItem key="navigationItem" id="UNq-Kw-UnM"/>
+                    <connections>
+                        <outlet property="profileTableView" destination="1bd-YE-5v1" id="LQU-nO-iwp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-9w-iYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
