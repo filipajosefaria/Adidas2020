@@ -8,6 +8,12 @@
 
 import Alamofire
 
+class Connectivity {
+    class var isConnectedToInternet: Bool {
+        return NetworkReachabilityManager()?.isReachable ?? false
+    }
+}
+
 enum APIEndpoint: URLRequestConvertible {
     case goals
     

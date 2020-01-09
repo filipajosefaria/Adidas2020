@@ -23,3 +23,12 @@ class GoalViewModel {
     }
 }
 
+func toViewModel(goals: [Goal]) -> [GoalViewModel] {
+    
+    var items: [GoalViewModel] = []
+    goals.forEach { (goal) in
+       let item = GoalViewModel(goal: goal)
+       items.append(item)
+    }
+    return items
+}

@@ -13,6 +13,20 @@ class GoalServices {
     
     class func getGoalsList(successBlock:@escaping (_ result: [GoalViewModel]) -> Void, errorBlock:@escaping (_ error: Error) -> Void){
         
+        if !Connectivity.isConnectedToInternet {
+
+            do {
+                let realm = try Realm()
+                let result = Array(realm.objects(Goal.self))
+                let items = toViewModel(goals: result)
+                successBlock(items)
+            } catch let error {
+                errorBlock(error)
+            }
+            
+            return
+        }
+        
         NetworkService.shared.getGoalsList(successBlock: { (goals) in
             
             do {
@@ -23,15 +37,11 @@ class GoalServices {
             } catch let error as NSError {
                 print("error saving data: \(error.localizedDescription)")
             }
-            
-            var items: [GoalViewModel] = []
-            goals.forEach { (goal) in
-               let item = GoalViewModel(goal: goal)
-               items.append(item)
-            }
+            let items = toViewModel(goals: goals)
             successBlock(items)
         }) { (error) in
             errorBlock(error)
         }
     }
+
 }
