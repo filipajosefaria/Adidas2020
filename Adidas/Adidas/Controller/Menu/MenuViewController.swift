@@ -61,6 +61,7 @@ class MenuViewController: UIViewController {
         workoutTableView.rowHeight = UITableView.automaticDimension
         workoutTableView.register(cellType: NewWorkoutCell.self)
         workoutTableView.register(cellType: WorkoutCell.self)
+        workoutTableView.register(cellType: SetGoalCell.self)
     }
 
 }
@@ -77,6 +78,9 @@ extension MenuViewController: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeue(indexPath, cellType: NewWorkoutCell.self)
             return cell
+        case 1:
+            let cell = tableView.dequeue(indexPath, cellType: SetGoalCell.self)
+            return cell
         default:
             let cell = tableView.dequeue(indexPath, cellType: WorkoutCell.self)
             return cell
@@ -87,13 +91,15 @@ extension MenuViewController: UITableViewDataSource {
 
 extension MenuViewController: UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-            print("New workout")
+            performSegue(withIdentifier: Constants.segue.newWorkout)
+        case 1:
+            performSegue(withIdentifier: Constants.segue.newGoal)
         default:
             print("Display workout")
         }

@@ -19,6 +19,13 @@ internal enum L10n {
     internal static let title = L10n.tr("Localizable", "alert.title")
   }
 
+  internal enum Goals {
+    internal enum Label {
+      /// Loading your goals
+      internal static let loading = L10n.tr("Localizable", "goals.label.loading")
+    }
+  }
+
   internal enum Healthkit {
     internal enum Error {
       /// Health kit does not have all the information needed
@@ -44,6 +51,8 @@ internal enum L10n {
     internal enum Cell {
       /// Tap to start a new workout
       internal static let newWorkout = L10n.tr("Localizable", "menu.cell.new_workout")
+      /// You haven't set any goal yet.\nTAP HERE TO SET YOUR GOAL
+      internal static let setGoal = L10n.tr("Localizable", "menu.cell.set_goal")
     }
   }
 
