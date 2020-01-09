@@ -6,7 +6,15 @@
   Copyright © 2020 BOLD. All rights reserved.
 */
 
+"alert.title" = "Alert";
+"alert.ok" = "OK";
+
+"healthkit.error.unavailable" = "Health kit is not available on your device";
+"healthkit.error.data_unavailable" = "Health kit does not have all the information needed";
+"healthkit.error.general" = "Something went wrong with Health Kit";
+"healthkit.message.permission_not_granted" = "You need to allow Health Kit";
 
 "menu.title" = "Adidas Health";
 "menu.button.profile" = "View Profile";
 "menu.cell.new_workout" = "Tap to start a new workout";
+

@@ -12,6 +12,28 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
 
+  internal enum Alert {
+    /// OK
+    internal static let ok = L10n.tr("Localizable", "alert.ok")
+    /// Alert
+    internal static let title = L10n.tr("Localizable", "alert.title")
+  }
+
+  internal enum Healthkit {
+    internal enum Error {
+      /// Health kit does not have all the information needed
+      internal static let dataUnavailable = L10n.tr("Localizable", "healthkit.error.data_unavailable")
+      /// Something went wrong with Health Kit
+      internal static let general = L10n.tr("Localizable", "healthkit.error.general")
+      /// Health kit is not available on your device
+      internal static let unavailable = L10n.tr("Localizable", "healthkit.error.unavailable")
+    }
+    internal enum Message {
+      /// You need to allow Health Kit
+      internal static let permissionNotGranted = L10n.tr("Localizable", "healthkit.message.permission_not_granted")
+    }
+  }
+
   internal enum Menu {
     /// Adidas Health
     internal static let title = L10n.tr("Localizable", "menu.title")

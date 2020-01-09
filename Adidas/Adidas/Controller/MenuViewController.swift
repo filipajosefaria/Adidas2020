@@ -16,6 +16,28 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        do {
+            try HealthKitServices.RequestHealthKitPermission(completion: { (granted) in
+                if !granted {
+                    Alert.showBasicAlert(with: L10n.Healthkit.Message.permissionNotGranted, on: self)
+                }
+            })
+        } catch  {
+            
+            var message:String
+            switch error {
+            case HealthKitErrors.HealthKitNotAvailableError :
+                message = L10n.Healthkit.Error.unavailable
+            case HealthKitErrors.HealthKitDataTypeNotAvailableError:
+                message = L10n.Healthkit.Error.dataUnavailable
+            default:
+                message = L10n.Healthkit.Error.general
+            }
+            Alert.showBasicAlert(with: message, on: self)
+        }
+           
+
+        
         setupUI()
     }
 
