@@ -16,14 +16,26 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupHeatlhKit()
+        setupUI()
+    }
+    
+    private func setupHeatlhKit() {
+        
         do {
-            try HealthKitServices.RequestHealthKitPermission(completion: { (granted) in
-                if !granted {
-                    Alert.showBasicAlert(with: L10n.Healthkit.Message.permissionNotGranted, on: self)
+            try HealthKitServices.RequestHealthKitPermission(completion: { [weak self] (granted) in
+                
+                guard let controller = self else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    if !granted {
+                        Alert.showBasicAlert(with: L10n.Healthkit.Message.permissionNotGranted, on: controller)
+                        return
+                    }
                 }
             })
         } catch  {
-            
             var message:String
             switch error {
             case HealthKitErrors.HealthKitNotAvailableError :
@@ -35,10 +47,6 @@ class MenuViewController: UIViewController {
             }
             Alert.showBasicAlert(with: message, on: self)
         }
-           
-
-        
-        setupUI()
     }
 
     private func setupUI() {
@@ -58,6 +66,7 @@ class MenuViewController: UIViewController {
 }
 
 extension MenuViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -72,9 +81,7 @@ extension MenuViewController: UITableViewDataSource {
             let cell = tableView.dequeue(indexPath, cellType: WorkoutCell.self)
             return cell
         }
-       
     }
-    
     
 }
 

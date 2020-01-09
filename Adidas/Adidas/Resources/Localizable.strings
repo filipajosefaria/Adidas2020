@@ -18,3 +18,11 @@
 "menu.button.profile" = "View Profile";
 "menu.cell.new_workout" = "Tap to start a new workout";
 
+"profile.title" = "My Profile";
+"profile.error.getting_profile" = "Something went wrong while getting your profile";
+"profile.label.dateOfBirth" = "Date of Birth";
+"profile.label.gender" = "Gender";
+"profile.gender.female" = "Female";
+"profile.gender.male" = "Male";
+"profile.gender.other" = "Other";
+
