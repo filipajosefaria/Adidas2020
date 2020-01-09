@@ -26,9 +26,9 @@ class ProfileCell: UITableViewCell {
         separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    public func set(model: ProfileViewModel) {
+    public func set(model: ProfileCellViewModel) {
         
-        titleLabel.text = model.titleString
+        titleLabel.text = "\(model.titleString):"
         valueLabel.text = model.valueString
     }
 }

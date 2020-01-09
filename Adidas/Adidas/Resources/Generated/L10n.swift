@@ -50,6 +50,24 @@ internal enum L10n {
   internal enum Profile {
     /// My Profile
     internal static let title = L10n.tr("Localizable", "profile.title")
+    internal enum Error {
+      /// Something went wrong while getting your profile
+      internal static let gettingProfile = L10n.tr("Localizable", "profile.error.getting_profile")
+    }
+    internal enum Gender {
+      /// Female
+      internal static let female = L10n.tr("Localizable", "profile.gender.female")
+      /// Male
+      internal static let male = L10n.tr("Localizable", "profile.gender.male")
+      /// Other
+      internal static let other = L10n.tr("Localizable", "profile.gender.other")
+    }
+    internal enum Label {
+      /// Date of Birth
+      internal static let dateOfBirth = L10n.tr("Localizable", "profile.label.dateOfBirth")
+      /// Gender
+      internal static let gender = L10n.tr("Localizable", "profile.label.gender")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
