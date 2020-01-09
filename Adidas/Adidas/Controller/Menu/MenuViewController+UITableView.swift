@@ -41,6 +41,7 @@ extension MenuViewController: UITableViewDataSource {
 }
 
 extension MenuViewController: UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -54,5 +55,28 @@ extension MenuViewController: UITableViewDelegate {
         default:
             print("Display workout")
         }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if section == 0 { return nil }
+        
+        let view = HeaderView.fromNib()
+        let title: String
+        switch section {
+        case 1:
+            title = L10n.Menu.Header.goal
+        case 2:
+            title = L10n.Menu.Header.workouts
+        default:
+            title = "-"
+        }
+        view.set(title: title)
+        return view
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return section == 0 ? 0 : 50.0
     }
 }

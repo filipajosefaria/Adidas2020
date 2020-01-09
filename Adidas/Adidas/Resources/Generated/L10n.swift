@@ -20,6 +20,8 @@ internal enum L10n {
   }
 
   internal enum Goals {
+    /// Select your goal
+    internal static let title = L10n.tr("Localizable", "goals.title")
     internal enum Label {
       /// Loading your goals
       internal static let loading = L10n.tr("Localizable", "goals.label.loading")
@@ -53,6 +55,12 @@ internal enum L10n {
       internal static let newWorkout = L10n.tr("Localizable", "menu.cell.new_workout")
       /// You haven't set any goal yet.\nTAP HERE TO SET YOUR GOAL
       internal static let setGoal = L10n.tr("Localizable", "menu.cell.set_goal")
+    }
+    internal enum Header {
+      /// Always remember your goal
+      internal static let goal = L10n.tr("Localizable", "menu.header.goal")
+      /// Your workouts
+      internal static let workouts = L10n.tr("Localizable", "menu.header.workouts")
     }
   }
 

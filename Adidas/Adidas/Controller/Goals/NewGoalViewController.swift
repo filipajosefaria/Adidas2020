@@ -23,6 +23,8 @@ class NewGoalViewController: UIViewController {
     
     private func setupUI() {
         
+        title = L10n.Goals.title.uppercased
+        
         goalsTableView.rowHeight = UITableView.automaticDimension
         goalsTableView.register(cellType: GoalCell.self)
     }

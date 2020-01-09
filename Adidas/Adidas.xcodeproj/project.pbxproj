@@ -31,6 +31,10 @@
 		6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */; };
 		6D72FAD023C74FF000240E0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACF23C74FF000240E0F /* Date.swift */; };
 		6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */; };
+		6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */; };
+		6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */; };
+		6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C923C7DD5B00FCABCA /* UIView.swift */; };
+		6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CB23C7E15000FCABCA /* UIColor.swift */; };
 		6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */; };
 		6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */; };
 		6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */; };
@@ -100,6 +104,10 @@
 		6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitServices+Profile.swift"; sourceTree = "<group>"; };
 		6D72FACF23C74FF000240E0F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellViewModel.swift; sourceTree = "<group>"; };
+		6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		6DCAA7C923C7DD5B00FCABCA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6DCAA7CB23C7E15000FCABCA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6DEC090223C68B1B00A81DF1 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +303,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		6DCAA7C423C7DBFD00FCABCA /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */,
+				6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */,
+			);
+			path = HeaderViews;
+			sourceTree = "<group>";
+		};
 		6DEC08F923C68B1B00A81DF1 = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +412,8 @@
 				6DEC094A23C69DC300A81DF1 /* NSObject.swift */,
 				6D72FACF23C74FF000240E0F /* Date.swift */,
 				6D725A2223C7874F0043FC1B /* UIViewController.swift */,
+				6DCAA7C923C7DD5B00FCABCA /* UIView.swift */,
+				6DCAA7CB23C7E15000FCABCA /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -402,6 +421,7 @@
 		6DEC094223C69A4900A81DF1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DCAA7C423C7DBFD00FCABCA /* HeaderViews */,
 				6DEC094323C69A5200A81DF1 /* TableViewCells */,
 			);
 			path = Views;
@@ -579,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEC091223C68B1C00A81DF1 /* LaunchScreen.storyboard in Resources */,
+				6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */,
 				6DEC093823C68F1900A81DF1 /* Localizable.strings in Resources */,
 				6DEC094723C69A7900A81DF1 /* NewWorkoutCell.xib in Resources */,
 				6D72FAC623C7342800240E0F /* ProfileCell.xib in Resources */,
@@ -745,14 +766,17 @@
 				6DEC094B23C69DC300A81DF1 /* NSObject.swift in Sources */,
 				6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */,
 				6D72FAD023C74FF000240E0F /* Date.swift in Sources */,
+				6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */,
 				6DEC093F23C6927600A81DF1 /* String.swift in Sources */,
 				6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */,
+				6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */,
 				6D725A2723C78EBA0043FC1B /* GoalCell.swift in Sources */,
 				6D725A2023C7854F0043FC1B /* NewGoalViewController.swift in Sources */,
 				6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */,
 				6D725A1423C77B550043FC1B /* NewWorkoutViewController.swift in Sources */,
 				6D72FABE23C7304E00240E0F /* ProfileViewController.swift in Sources */,
 				6D72FACC23C73C9F00240E0F /* ProfileViewModel.swift in Sources */,
+				6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */,
 				6DEC094623C69A7900A81DF1 /* NewWorkoutCell.swift in Sources */,
 				6D725A2A23C78EFC0043FC1B /* GoalViewModel.swift in Sources */,
 				6D725A3123C7A94D0043FC1B /* NewGoalProtocol.swift in Sources */,

@@ -53,12 +53,13 @@ class MenuViewController: UIViewController {
         title = L10n.Menu.title.uppercased
         
         profileButton.setTitle(L10n.Menu.Button.profile.uppercased, for: .normal)
-        profileButton.backgroundColor = .darkGray
+        profileButton.backgroundColor = UIColor(hex: 0xE2814D)
         profileButton.setTitleColor(.white, for: .normal)
         profileButton.layer.cornerRadius = 5
         profileButton.titleLabel?.font = .boldSystemFont(ofSize: 20)
         
         workoutTableView.rowHeight = UITableView.automaticDimension
+        workoutTableView.sectionHeaderHeight = 50.0
         workoutTableView.register(cellType: NewWorkoutCell.self)
         workoutTableView.register(cellType: WorkoutCell.self)
         workoutTableView.register(cellType: SetGoalCell.self)

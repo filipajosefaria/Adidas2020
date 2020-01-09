@@ -13,4 +13,8 @@ extension String {
     var uppercased: String {
         return self.uppercased()
     }
+    
+    var capitalized: String {
+        return self.capitalized(with: nil)
+    }
 }

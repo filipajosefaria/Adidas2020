@@ -10,6 +10,7 @@ import UIKit
 
 class GoalCell: UITableViewCell {
     
+    @IBOutlet private weak var wrapView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     
@@ -21,10 +22,15 @@ class GoalCell: UITableViewCell {
     
     private func setupUI() {
         
+        wrapView.backgroundColor = UIColor(hex: 0x173F5F)
+        wrapView.layer.cornerRadius = 5.0
+        
         titleLabel.font = .boldSystemFont(ofSize: 25.0)
+        titleLabel.textColor = UIColor.white.withAlphaComponent(0.75)
         
         descriptionLabel.font = .systemFont(ofSize: 14.0)
         descriptionLabel.numberOfLines = 0
+        descriptionLabel.textColor = UIColor.white.withAlphaComponent(0.75)
     }
     
     public func set(model: GoalViewModel) {

@@ -21,7 +21,7 @@ class SetGoalCell: UITableViewCell {
     
     private func setupUI() {
         
-        wrapView.backgroundColor = UIColor.purple.withAlphaComponent(0.5)
+        wrapView.backgroundColor = UIColor(hex: 0x173F5F).withAlphaComponent(0.75)
         wrapView.layer.cornerRadius = 5.0
         
         titleLabel.numberOfLines = 0
