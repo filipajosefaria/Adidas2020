@@ -18,9 +18,35 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWi-ws-vY1">
                         <rect key="frame" x="0.0" y="5" width="320" height="155"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Neg-uf-kd2">
+                                <rect key="frame" x="258" y="93" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDX-A5-apG">
+                                <rect key="frame" x="258" y="114" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-zQ-WSa">
+                                <rect key="frame" x="258" y="62" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="155" id="2Yj-Ky-tOM"/>
+                            <constraint firstAttribute="trailing" secondItem="uDX-A5-apG" secondAttribute="trailing" constant="20" id="3AS-dS-BuH"/>
+                            <constraint firstItem="uDX-A5-apG" firstAttribute="top" secondItem="Neg-uf-kd2" secondAttribute="bottom" id="A9h-lz-EJi"/>
+                            <constraint firstAttribute="bottom" secondItem="uDX-A5-apG" secondAttribute="bottom" constant="20" id="R7x-Fd-bne"/>
+                            <constraint firstItem="Neg-uf-kd2" firstAttribute="trailing" secondItem="uDX-A5-apG" secondAttribute="trailing" id="TdD-8s-rj7"/>
+                            <constraint firstItem="AQw-zQ-WSa" firstAttribute="trailing" secondItem="Neg-uf-kd2" secondAttribute="trailing" id="UoI-BV-tDZ"/>
+                            <constraint firstItem="Neg-uf-kd2" firstAttribute="top" secondItem="AQw-zQ-WSa" secondAttribute="bottom" constant="10" id="j3U-uj-dZP"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -34,6 +60,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dateLabel" destination="Neg-uf-kd2" id="cb4-Od-V5A"/>
+                <outlet property="durationLabel" destination="AQw-zQ-WSa" id="Acc-Bv-9wv"/>
+                <outlet property="typeLabel" destination="uDX-A5-apG" id="cUB-Qb-VkN"/>
                 <outlet property="wrapView" destination="SWi-ws-vY1" id="0MD-jq-Wej"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="144.30803571428569"/>

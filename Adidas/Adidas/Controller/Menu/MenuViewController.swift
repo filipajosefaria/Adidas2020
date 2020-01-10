@@ -10,6 +10,8 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    var workoutsInfo: [WorkoutViewModel] = []
+    
     @IBOutlet private weak var profileButton: UIButton!
     @IBOutlet private weak var workoutTableView: UITableView!
     
@@ -18,6 +20,12 @@ class MenuViewController: UIViewController {
         
         setupHeatlhKit()
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        getWorkouts()
     }
     
     private func setupHeatlhKit() {
@@ -67,6 +75,33 @@ class MenuViewController: UIViewController {
     }
 
 }
+
+extension MenuViewController {
+    
+    private func getWorkouts() {
+        
+        WorkoutServices.getUserWorkouts(successBlock: { [weak self] (workouts) in
+            guard let controller = self else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                controller.workoutsInfo = workouts
+                controller.workoutTableView.reloadData()
+            }
+            
+        }) { [weak self] in
+            guard let controller = self else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                Alert.showBasicAlert(with: L10n.Workout.Alert.getError, on: controller)
+            }
+        }
+    }
+}
+
 
 extension MenuViewController: NewGoalDelegate {
     

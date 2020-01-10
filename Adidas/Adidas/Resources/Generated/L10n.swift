@@ -86,6 +86,27 @@ internal enum L10n {
       internal static let gender = L10n.tr("Localizable", "profile.label.gender")
     }
   }
+
+  internal enum Workout {
+    internal enum Alert {
+      /// Something went wrong while saving your workout
+      internal static let error = L10n.tr("Localizable", "workout.alert.error")
+      /// Something went wrong while getting your workouts
+      internal static let getError = L10n.tr("Localizable", "workout.alert.get_error")
+    }
+    internal enum Button {
+      /// Save
+      internal static let save = L10n.tr("Localizable", "workout.button.save")
+      /// Stop
+      internal static let stop = L10n.tr("Localizable", "workout.button.stop")
+    }
+    internal enum Control {
+      /// Running
+      internal static let run = L10n.tr("Localizable", "workout.control.run")
+      /// Walking
+      internal static let walk = L10n.tr("Localizable", "workout.control.walk")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
