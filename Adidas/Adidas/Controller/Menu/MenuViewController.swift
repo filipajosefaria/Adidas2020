@@ -90,14 +90,7 @@ extension MenuViewController {
                 controller.workoutTableView.reloadData()
             }
             
-        }) { [weak self] in
-            guard let controller = self else {
-                return
-            }
-            
-            DispatchQueue.main.async {
-                Alert.showBasicAlert(with: L10n.Workout.Alert.getError, on: controller)
-            }
+        }) {
         }
     }
 }
