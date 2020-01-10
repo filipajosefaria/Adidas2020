@@ -17,3 +17,17 @@ extension Date {
         return formatter.string(from: self)
     }
 }
+
+
+extension TimeInterval {
+
+    func format() -> String? {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.minute, .second]
+        formatter.unitsStyle = .positional
+        formatter.maximumUnitCount = 2
+        formatter.zeroFormattingBehavior = [.pad]
+
+        return formatter.string(from: self)
+    }
+}

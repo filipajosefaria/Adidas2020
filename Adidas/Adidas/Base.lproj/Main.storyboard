@@ -67,10 +67,57 @@
                     <view key="view" contentMode="scaleToFill" id="Xhx-dW-m0f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Idn-lF-ntv">
+                                <rect key="frame" x="263" y="108" width="131" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="XOM-0e-DCN" eventType="valueChanged" id="KT8-OS-p1V"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bj-3b-VIq">
+                                <rect key="frame" x="20" y="288" width="374" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Bj-3b-VIq" secondAttribute="height" multiplier="2:1" id="LLt-GZ-AF2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-4V-zma">
+                                <rect key="frame" x="20" y="495" width="374" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rv5-4V-zma" secondAttribute="height" multiplier="6:1" id="GtM-n6-bMG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="XOM-0e-DCN" eventType="touchUpInside" id="hC1-42-E1v"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z6R-ca-rzO" firstAttribute="trailing" secondItem="Idn-lF-ntv" secondAttribute="trailing" constant="20" id="At2-vy-HA0"/>
+                            <constraint firstItem="z6R-ca-rzO" firstAttribute="trailing" secondItem="8Bj-3b-VIq" secondAttribute="trailing" constant="20" id="ByV-e0-gSH"/>
+                            <constraint firstItem="Rv5-4V-zma" firstAttribute="top" secondItem="8Bj-3b-VIq" secondAttribute="bottom" constant="20" id="Ceg-2I-1Hu"/>
+                            <constraint firstItem="8Bj-3b-VIq" firstAttribute="bottom" secondItem="z6R-ca-rzO" secondAttribute="centerY" id="HGc-RJ-L5F"/>
+                            <constraint firstItem="Rv5-4V-zma" firstAttribute="leading" secondItem="8Bj-3b-VIq" secondAttribute="leading" id="UgY-je-34q"/>
+                            <constraint firstItem="Rv5-4V-zma" firstAttribute="trailing" secondItem="8Bj-3b-VIq" secondAttribute="trailing" id="VQm-oY-1Cj"/>
+                            <constraint firstItem="8Bj-3b-VIq" firstAttribute="centerX" secondItem="z6R-ca-rzO" secondAttribute="centerX" id="bPU-hy-CZW"/>
+                            <constraint firstItem="8Bj-3b-VIq" firstAttribute="leading" secondItem="z6R-ca-rzO" secondAttribute="leading" constant="20" id="ejS-Zg-dIN"/>
+                            <constraint firstItem="Idn-lF-ntv" firstAttribute="top" secondItem="z6R-ca-rzO" secondAttribute="top" constant="20" id="rs2-SW-sNn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z6R-ca-rzO"/>
                     </view>
                     <navigationItem key="navigationItem" id="Xmf-Up-s0O"/>
+                    <connections>
+                        <outlet property="stopButton" destination="Rv5-4V-zma" id="Xoc-l7-POT"/>
+                        <outlet property="timerLabel" destination="8Bj-3b-VIq" id="86M-os-zhh"/>
+                        <outlet property="workoutTypeControl" destination="Idn-lF-ntv" id="wqC-57-yVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REO-IT-i4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
