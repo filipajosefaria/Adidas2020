@@ -37,3 +37,4 @@
 "workout.button.stop" = "Stop";
 "workout.button.save" = "Save";
 "workout.alert.error" = "Something went wrong while saving your workout";
+"workout.alert.get_error" = "Something went wrong while getting your workouts";

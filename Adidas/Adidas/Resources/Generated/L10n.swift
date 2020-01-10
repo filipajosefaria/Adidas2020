@@ -91,6 +91,8 @@ internal enum L10n {
     internal enum Alert {
       /// Something went wrong while saving your workout
       internal static let error = L10n.tr("Localizable", "workout.alert.error")
+      /// Something went wrong while getting your workouts
+      internal static let getError = L10n.tr("Localizable", "workout.alert.get_error")
     }
     internal enum Button {
       /// Save

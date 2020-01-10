@@ -11,7 +11,7 @@ import UIKit
 extension MenuViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return section == 2 ? workoutsInfo.count : 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +34,8 @@ extension MenuViewController: UITableViewDataSource {
             return cell
         default:
             let cell = tableView.dequeue(indexPath, cellType: WorkoutCell.self)
+            let model = workoutsInfo[indexPath.row]
+            cell.set(model: model)
             return cell
         }
     }
@@ -53,7 +55,7 @@ extension MenuViewController: UITableViewDelegate {
         case 1:
             performSegue(withIdentifier: Constants.segue.newGoal)
         default:
-            print("Display workout")
+            return
         }
     }
     

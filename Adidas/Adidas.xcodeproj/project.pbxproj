@@ -37,6 +37,7 @@
 		6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CB23C7E15000FCABCA /* UIColor.swift */; };
 		6DCAA7CE23C7E72700FCABCA /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CD23C7E72700FCABCA /* Workout.swift */; };
 		6DCAA7D123C7E88800FCABCA /* WorkoutServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7D023C7E88800FCABCA /* WorkoutServices.swift */; };
+		6DCAA7D323C805D800FCABCA /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */; };
 		6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */; };
 		6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */; };
 		6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */; };
@@ -112,6 +113,7 @@
 		6DCAA7CB23C7E15000FCABCA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6DCAA7CD23C7E72700FCABCA /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		6DCAA7D023C7E88800FCABCA /* WorkoutServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutServices.swift; sourceTree = "<group>"; };
+		6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		6DEC090223C68B1B00A81DF1 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				6D72FACB23C73C9F00240E0F /* ProfileViewModel.swift */,
 				6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */,
 				6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */,
+				6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -770,6 +773,7 @@
 				6D725A1123C7794F0043FC1B /* GoalsResponse.swift in Sources */,
 				6D725A1623C77C9C0043FC1B /* Constants.swift in Sources */,
 				6D725A1923C77E580043FC1B /* APIEndpoint.swift in Sources */,
+				6DCAA7D323C805D800FCABCA /* WorkoutViewModel.swift in Sources */,
 				6D725A1D23C782A50043FC1B /* SetGoalCell.swift in Sources */,
 				6D725A2C23C792A80043FC1B /* GoalServices.swift in Sources */,
 				6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */,

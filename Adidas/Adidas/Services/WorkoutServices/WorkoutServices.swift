@@ -51,24 +51,36 @@ class WorkoutServices {
 
     }
     
-    class func getUserWorkouts(completion: @escaping ([HKWorkout]?, Error?) -> Void) {
+    class func getUserWorkouts(successBlock: @escaping (_ result: [WorkoutViewModel]) -> Void, errorBlock:@escaping () -> Void) {
         
         let sourcePredicate = HKQuery.predicateForObjects(from: .default())
         let predicates = NSCompoundPredicate(andPredicateWithSubpredicates:
         [sourcePredicate])
 
-        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
 
         let query = HKSampleQuery(sampleType: .workoutType() , predicate: predicates, limit: 0, sortDescriptors: [sortDescriptor]) { (query, samples, error) in
 
-              guard let samples = samples as? [HKWorkout], error == nil else {
-                  completion(nil, error)
-                  return
-              }
-              completion(samples, nil)
+            guard let samples = samples as? [HKWorkout], error == nil else {
+              errorBlock()
+              return
+            }
+
+            let items = toViewModel(workouts: samples)
+            successBlock(items)
         }
 
         HKHealthStore().execute(query)
     }
 
+}
+
+func toViewModel(workouts: [HKWorkout]) -> [WorkoutViewModel] {
+    
+    var items: [WorkoutViewModel] = []
+    workouts.forEach { (workout) in
+       let item = WorkoutViewModel(workout: workout)
+       items.append(item)
+    }
+    return items
 }
