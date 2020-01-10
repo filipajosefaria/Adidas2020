@@ -1,0 +1,1142 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		168B609770D8879B828E038E /* Pods_Adidas_AdidasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B2F7B98A6DEAA517ABF7C /* Pods_Adidas_AdidasUITests.framework */; };
+		6D725A0F23C776AE0043FC1B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A0E23C776AE0043FC1B /* NetworkService.swift */; };
+		6D725A1123C7794F0043FC1B /* GoalsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1023C7794F0043FC1B /* GoalsResponse.swift */; };
+		6D725A1423C77B550043FC1B /* NewWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */; };
+		6D725A1623C77C9C0043FC1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1523C77C9C0043FC1B /* Constants.swift */; };
+		6D725A1923C77E580043FC1B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1823C77E580043FC1B /* APIEndpoint.swift */; };
+		6D725A1D23C782A50043FC1B /* SetGoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1B23C782A50043FC1B /* SetGoalCell.swift */; };
+		6D725A1E23C782A50043FC1B /* SetGoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D725A1C23C782A50043FC1B /* SetGoalCell.xib */; };
+		6D725A2023C7854F0043FC1B /* NewGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */; };
+		6D725A2323C7874F0043FC1B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2223C7874F0043FC1B /* UIViewController.swift */; };
+		6D725A2723C78EBA0043FC1B /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2523C78EBA0043FC1B /* GoalCell.swift */; };
+		6D725A2823C78EBA0043FC1B /* GoalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D725A2623C78EBA0043FC1B /* GoalCell.xib */; };
+		6D725A2A23C78EFC0043FC1B /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */; };
+		6D725A2C23C792A80043FC1B /* GoalServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2B23C792A80043FC1B /* GoalServices.swift */; };
+		6D725A2E23C7A8D10043FC1B /* MenuViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */; };
+		6D725A3123C7A94D0043FC1B /* NewGoalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */; };
+		6D72FABE23C7304E00240E0F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FABD23C7304E00240E0F /* ProfileViewController.swift */; };
+		6D72FAC523C7342800240E0F /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAC323C7342800240E0F /* ProfileCell.swift */; };
+		6D72FAC623C7342800240E0F /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D72FAC423C7342800240E0F /* ProfileCell.xib */; };
+		6D72FAC923C73C7200240E0F /* HealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAC823C73C7200240E0F /* HealthProfile.swift */; };
+		6D72FACC23C73C9F00240E0F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACB23C73C9F00240E0F /* ProfileViewModel.swift */; };
+		6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */; };
+		6D72FAD023C74FF000240E0F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FACF23C74FF000240E0F /* Date.swift */; };
+		6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */; };
+		6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */; };
+		6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */; };
+		6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7C923C7DD5B00FCABCA /* UIView.swift */; };
+		6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CB23C7E15000FCABCA /* UIColor.swift */; };
+		6DCAA7CE23C7E72700FCABCA /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7CD23C7E72700FCABCA /* Workout.swift */; };
+		6DCAA7D123C7E88800FCABCA /* WorkoutServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7D023C7E88800FCABCA /* WorkoutServices.swift */; };
+		6DCAA7D323C805D800FCABCA /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */; };
+		6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */; };
+		6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */; };
+		6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */; };
+		6DEC090D23C68B1B00A81DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC090B23C68B1B00A81DF1 /* Main.storyboard */; };
+		6DEC090F23C68B1C00A81DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC090E23C68B1C00A81DF1 /* Assets.xcassets */; };
+		6DEC091223C68B1C00A81DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC091023C68B1C00A81DF1 /* LaunchScreen.storyboard */; };
+		6DEC091D23C68B1C00A81DF1 /* AdidasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC091C23C68B1C00A81DF1 /* AdidasTests.swift */; };
+		6DEC092823C68B1C00A81DF1 /* AdidasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC092723C68B1C00A81DF1 /* AdidasUITests.swift */; };
+		6DEC093823C68F1900A81DF1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC093723C68F1900A81DF1 /* Localizable.strings */; };
+		6DEC093C23C690F500A81DF1 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC093B23C690F500A81DF1 /* L10n.swift */; };
+		6DEC093F23C6927600A81DF1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC093E23C6927600A81DF1 /* String.swift */; };
+		6DEC094623C69A7900A81DF1 /* NewWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC094423C69A7900A81DF1 /* NewWorkoutCell.swift */; };
+		6DEC094723C69A7900A81DF1 /* NewWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC094523C69A7900A81DF1 /* NewWorkoutCell.xib */; };
+		6DEC094923C69D8900A81DF1 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC094823C69D8900A81DF1 /* UITableView.swift */; };
+		6DEC094B23C69DC300A81DF1 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC094A23C69DC300A81DF1 /* NSObject.swift */; };
+		6DEC094E23C69F1A00A81DF1 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC094C23C69F1A00A81DF1 /* WorkoutCell.swift */; };
+		6DEC094F23C69F1A00A81DF1 /* WorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEC094D23C69F1A00A81DF1 /* WorkoutCell.xib */; };
+		6DEC095223C6A40B00A81DF1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEC095123C6A40B00A81DF1 /* HealthKit.framework */; };
+		6DEC095523C6A55100A81DF1 /* HealthKitServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC095423C6A55100A81DF1 /* HealthKitServices.swift */; };
+		6DEC095923C6AB7F00A81DF1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEC095823C6AB7F00A81DF1 /* Alert.swift */; };
+		A001C1F7E48F9E28DCEA3965 /* Pods_Adidas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A543136780F4D3DCE9A67096 /* Pods_Adidas.framework */; };
+		EF7B1E653580C8DEC5718727 /* Pods_AdidasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE4C0793A312AB9E1B2C5FD /* Pods_AdidasTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DEC091923C68B1C00A81DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEC08FA23C68B1B00A81DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DEC090123C68B1B00A81DF1;
+			remoteInfo = Adidas;
+		};
+		6DEC092423C68B1C00A81DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEC08FA23C68B1B00A81DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DEC090123C68B1B00A81DF1;
+			remoteInfo = Adidas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		253096F07977EF6DC580D495 /* Pods-Adidas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adidas.release.xcconfig"; path = "Target Support Files/Pods-Adidas/Pods-Adidas.release.xcconfig"; sourceTree = "<group>"; };
+		3A3F3B15E41B449104FCEE60 /* Pods-Adidas-AdidasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adidas-AdidasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2F7D9BD134AAEB40BA9512 /* Pods-AdidasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdidasTests.release.xcconfig"; path = "Target Support Files/Pods-AdidasTests/Pods-AdidasTests.release.xcconfig"; sourceTree = "<group>"; };
+		4BE4C0793A312AB9E1B2C5FD /* Pods_AdidasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdidasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D725A0E23C776AE0043FC1B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6D725A1023C7794F0043FC1B /* GoalsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsResponse.swift; sourceTree = "<group>"; };
+		6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutViewController.swift; sourceTree = "<group>"; };
+		6D725A1523C77C9C0043FC1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D725A1823C77E580043FC1B /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		6D725A1B23C782A50043FC1B /* SetGoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalCell.swift; sourceTree = "<group>"; };
+		6D725A1C23C782A50043FC1B /* SetGoalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetGoalCell.xib; sourceTree = "<group>"; };
+		6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalViewController.swift; sourceTree = "<group>"; };
+		6D725A2223C7874F0043FC1B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		6D725A2523C78EBA0043FC1B /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		6D725A2623C78EBA0043FC1B /* GoalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCell.xib; sourceTree = "<group>"; };
+		6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		6D725A2B23C792A80043FC1B /* GoalServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalServices.swift; sourceTree = "<group>"; };
+		6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+UITableView.swift"; sourceTree = "<group>"; };
+		6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalProtocol.swift; sourceTree = "<group>"; };
+		6D72FABD23C7304E00240E0F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6D72FAC323C7342800240E0F /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		6D72FAC423C7342800240E0F /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		6D72FAC823C73C7200240E0F /* HealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfile.swift; sourceTree = "<group>"; };
+		6D72FACB23C73C9F00240E0F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthKitServices+Profile.swift"; sourceTree = "<group>"; };
+		6D72FACF23C74FF000240E0F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellViewModel.swift; sourceTree = "<group>"; };
+		6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		6DCAA7C923C7DD5B00FCABCA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6DCAA7CB23C7E15000FCABCA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		6DCAA7CD23C7E72700FCABCA /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		6DCAA7D023C7E88800FCABCA /* WorkoutServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutServices.swift; sourceTree = "<group>"; };
+		6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		6DEC090223C68B1B00A81DF1 /* Adidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6DEC090C23C68B1B00A81DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DEC090E23C68B1C00A81DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DEC091123C68B1C00A81DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DEC091323C68B1C00A81DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEC091823C68B1C00A81DF1 /* AdidasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEC091C23C68B1C00A81DF1 /* AdidasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasTests.swift; sourceTree = "<group>"; };
+		6DEC091E23C68B1C00A81DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEC092323C68B1C00A81DF1 /* AdidasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdidasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEC092723C68B1C00A81DF1 /* AdidasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasUITests.swift; sourceTree = "<group>"; };
+		6DEC092923C68B1D00A81DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEC093723C68F1900A81DF1 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6DEC093B23C690F500A81DF1 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		6DEC093E23C6927600A81DF1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6DEC094423C69A7900A81DF1 /* NewWorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkoutCell.swift; sourceTree = "<group>"; };
+		6DEC094523C69A7900A81DF1 /* NewWorkoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewWorkoutCell.xib; sourceTree = "<group>"; };
+		6DEC094823C69D8900A81DF1 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		6DEC094A23C69DC300A81DF1 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		6DEC094C23C69F1A00A81DF1 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
+		6DEC094D23C69F1A00A81DF1 /* WorkoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutCell.xib; sourceTree = "<group>"; };
+		6DEC095023C6A40B00A81DF1 /* Adidas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Adidas.entitlements; sourceTree = "<group>"; };
+		6DEC095123C6A40B00A81DF1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		6DEC095423C6A55100A81DF1 /* HealthKitServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitServices.swift; sourceTree = "<group>"; };
+		6DEC095823C6AB7F00A81DF1 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A543136780F4D3DCE9A67096 /* Pods_Adidas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adidas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAAABD740D39218281C6E1E1 /* Pods-AdidasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdidasTests.debug.xcconfig"; path = "Target Support Files/Pods-AdidasTests/Pods-AdidasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46191AF20668106BBCE01D4 /* Pods-Adidas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adidas.debug.xcconfig"; path = "Target Support Files/Pods-Adidas/Pods-Adidas.debug.xcconfig"; sourceTree = "<group>"; };
+		CA7B2F7B98A6DEAA517ABF7C /* Pods_Adidas_AdidasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adidas_AdidasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E526DCECC88099DD4F1E46D7 /* Pods-Adidas-AdidasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adidas-AdidasUITests.release.xcconfig"; path = "Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DEC08FF23C68B1B00A81DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001C1F7E48F9E28DCEA3965 /* Pods_Adidas.framework in Frameworks */,
+				6DEC095223C6A40B00A81DF1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC091523C68B1C00A81DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7B1E653580C8DEC5718727 /* Pods_AdidasTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC092023C68B1C00A81DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168B609770D8879B828E038E /* Pods_Adidas_AdidasUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AD86B5CCBD7325B041A9ACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC095123C6A40B00A81DF1 /* HealthKit.framework */,
+				A543136780F4D3DCE9A67096 /* Pods_Adidas.framework */,
+				CA7B2F7B98A6DEAA517ABF7C /* Pods_Adidas_AdidasUITests.framework */,
+				4BE4C0793A312AB9E1B2C5FD /* Pods_AdidasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D725A0D23C775D80043FC1B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1723C77E480043FC1B /* Enums */,
+				6D725A0E23C776AE0043FC1B /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6D725A1223C77B3C0043FC1B /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1323C77B550043FC1B /* NewWorkoutViewController.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		6D725A1723C77E480043FC1B /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1823C77E580043FC1B /* APIEndpoint.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6D725A1A23C782760043FC1B /* SetGoal */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1B23C782A50043FC1B /* SetGoalCell.swift */,
+				6D725A1C23C782A50043FC1B /* SetGoalCell.xib */,
+			);
+			path = SetGoal;
+			sourceTree = "<group>";
+		};
+		6D725A2123C785530043FC1B /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1F23C7854F0043FC1B /* NewGoalViewController.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		6D725A2423C78E9C0043FC1B /* GoalCell */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A2523C78EBA0043FC1B /* GoalCell.swift */,
+				6D725A2623C78EBA0043FC1B /* GoalCell.xib */,
+			);
+			path = GoalCell;
+			sourceTree = "<group>";
+		};
+		6D725A2F23C7A92E0043FC1B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A3023C7A94D0043FC1B /* NewGoalProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D725A3223C7AB630043FC1B /* GoalServices */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A2B23C792A80043FC1B /* GoalServices.swift */,
+			);
+			path = GoalServices;
+			sourceTree = "<group>";
+		};
+		6D72FABC23C7303500240E0F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6D72FABD23C7304E00240E0F /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6D72FAC023C733D400240E0F /* NewWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC094423C69A7900A81DF1 /* NewWorkoutCell.swift */,
+				6DEC094523C69A7900A81DF1 /* NewWorkoutCell.xib */,
+			);
+			path = NewWorkout;
+			sourceTree = "<group>";
+		};
+		6D72FAC123C733ED00240E0F /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC094C23C69F1A00A81DF1 /* WorkoutCell.swift */,
+				6DEC094D23C69F1A00A81DF1 /* WorkoutCell.xib */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		6D72FAC223C733FD00240E0F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6D72FAC323C7342800240E0F /* ProfileCell.swift */,
+				6D72FAC423C7342800240E0F /* ProfileCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6D72FAC723C73C5F00240E0F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D72FAC823C73C7200240E0F /* HealthProfile.swift */,
+				6D725A1023C7794F0043FC1B /* GoalsResponse.swift */,
+				6DCAA7CD23C7E72700FCABCA /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D72FACA23C73C8600240E0F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6D72FACB23C73C9F00240E0F /* ProfileViewModel.swift */,
+				6D72FAD123C7552B00240E0F /* ProfileCellViewModel.swift */,
+				6D725A2923C78EFC0043FC1B /* GoalViewModel.swift */,
+				6DCAA7D223C805D800FCABCA /* WorkoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6DCAA7C423C7DBFD00FCABCA /* HeaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7C523C7DC2900FCABCA /* HeaderView.swift */,
+				6DCAA7C723C7DC3B00FCABCA /* HeaderView.xib */,
+			);
+			path = HeaderViews;
+			sourceTree = "<group>";
+		};
+		6DCAA7CF23C7E87200FCABCA /* WorkoutServices */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7D023C7E88800FCABCA /* WorkoutServices.swift */,
+			);
+			path = WorkoutServices;
+			sourceTree = "<group>";
+		};
+		6DEC08F923C68B1B00A81DF1 = {
+			isa = PBXGroup;
+			children = (
+				6DEC090423C68B1B00A81DF1 /* Adidas */,
+				6DEC091B23C68B1C00A81DF1 /* AdidasTests */,
+				6DEC092623C68B1C00A81DF1 /* AdidasUITests */,
+				6DEC090323C68B1B00A81DF1 /* Products */,
+				E31418CA438435356FA508A5 /* Pods */,
+				0AD86B5CCBD7325B041A9ACE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6DEC090323C68B1B00A81DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC090223C68B1B00A81DF1 /* Adidas.app */,
+				6DEC091823C68B1C00A81DF1 /* AdidasTests.xctest */,
+				6DEC092323C68B1C00A81DF1 /* AdidasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DEC090423C68B1B00A81DF1 /* Adidas */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC095023C6A40B00A81DF1 /* Adidas.entitlements */,
+				6DEC090523C68B1B00A81DF1 /* AppDelegate.swift */,
+				6DEC090723C68B1B00A81DF1 /* SceneDelegate.swift */,
+				6DEC095323C6A52900A81DF1 /* Services */,
+				6D725A2F23C7A92E0043FC1B /* Protocols */,
+				6D72FAC723C73C5F00240E0F /* Models */,
+				6D72FACA23C73C8600240E0F /* ViewModels */,
+				6DEC094223C69A4900A81DF1 /* Views */,
+				6DEC093523C68DB500A81DF1 /* Controller */,
+				6DEC090B23C68B1B00A81DF1 /* Main.storyboard */,
+				6DEC090E23C68B1C00A81DF1 /* Assets.xcassets */,
+				6DEC091023C68B1C00A81DF1 /* LaunchScreen.storyboard */,
+				6DEC091323C68B1C00A81DF1 /* Info.plist */,
+				6DEC095723C6AB7100A81DF1 /* Shared */,
+				6DEC093D23C6916300A81DF1 /* Extensions */,
+				6DEC093623C68EED00A81DF1 /* Resources */,
+			);
+			path = Adidas;
+			sourceTree = "<group>";
+		};
+		6DEC091B23C68B1C00A81DF1 /* AdidasTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC091C23C68B1C00A81DF1 /* AdidasTests.swift */,
+				6DEC091E23C68B1C00A81DF1 /* Info.plist */,
+			);
+			path = AdidasTests;
+			sourceTree = "<group>";
+		};
+		6DEC092623C68B1C00A81DF1 /* AdidasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC092723C68B1C00A81DF1 /* AdidasUITests.swift */,
+				6DEC092923C68B1D00A81DF1 /* Info.plist */,
+			);
+			path = AdidasUITests;
+			sourceTree = "<group>";
+		};
+		6DEC093523C68DB500A81DF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A1223C77B3C0043FC1B /* Workout */,
+				6D72FABC23C7303500240E0F /* Profile */,
+				6DEC095C23C6B78D00A81DF1 /* Menu */,
+				6D725A2123C785530043FC1B /* Goals */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DEC093623C68EED00A81DF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC093A23C690D200A81DF1 /* Generated */,
+				6DEC093723C68F1900A81DF1 /* Localizable.strings */,
+				6D725A1523C77C9C0043FC1B /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DEC093A23C690D200A81DF1 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC093B23C690F500A81DF1 /* L10n.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		6DEC093D23C6916300A81DF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC093E23C6927600A81DF1 /* String.swift */,
+				6DEC094823C69D8900A81DF1 /* UITableView.swift */,
+				6DEC094A23C69DC300A81DF1 /* NSObject.swift */,
+				6D72FACF23C74FF000240E0F /* Date.swift */,
+				6D725A2223C7874F0043FC1B /* UIViewController.swift */,
+				6DCAA7C923C7DD5B00FCABCA /* UIView.swift */,
+				6DCAA7CB23C7E15000FCABCA /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6DEC094223C69A4900A81DF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7C423C7DBFD00FCABCA /* HeaderViews */,
+				6DEC094323C69A5200A81DF1 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DEC094323C69A5200A81DF1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6D725A2423C78E9C0043FC1B /* GoalCell */,
+				6D725A1A23C782760043FC1B /* SetGoal */,
+				6D72FAC223C733FD00240E0F /* Profile */,
+				6D72FAC023C733D400240E0F /* NewWorkout */,
+				6D72FAC123C733ED00240E0F /* Workout */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		6DEC095323C6A52900A81DF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6DCAA7CF23C7E87200FCABCA /* WorkoutServices */,
+				6D725A3223C7AB630043FC1B /* GoalServices */,
+				6D725A0D23C775D80043FC1B /* Networking */,
+				6DEC095623C6A55900A81DF1 /* HealthKit */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6DEC095623C6A55900A81DF1 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC095423C6A55100A81DF1 /* HealthKitServices.swift */,
+				6D72FACD23C73F0B00240E0F /* HealthKitServices+Profile.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		6DEC095723C6AB7100A81DF1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC095823C6AB7F00A81DF1 /* Alert.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6DEC095C23C6B78D00A81DF1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				6DEC090923C68B1B00A81DF1 /* MenuViewController.swift */,
+				6D725A2D23C7A8D10043FC1B /* MenuViewController+UITableView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E31418CA438435356FA508A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C46191AF20668106BBCE01D4 /* Pods-Adidas.debug.xcconfig */,
+				253096F07977EF6DC580D495 /* Pods-Adidas.release.xcconfig */,
+				3A3F3B15E41B449104FCEE60 /* Pods-Adidas-AdidasUITests.debug.xcconfig */,
+				E526DCECC88099DD4F1E46D7 /* Pods-Adidas-AdidasUITests.release.xcconfig */,
+				BAAABD740D39218281C6E1E1 /* Pods-AdidasTests.debug.xcconfig */,
+				3F2F7D9BD134AAEB40BA9512 /* Pods-AdidasTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DEC090123C68B1B00A81DF1 /* Adidas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEC092C23C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "Adidas" */;
+			buildPhases = (
+				9F47DFC5D0DFBCA38465FA54 /* [CP] Check Pods Manifest.lock */,
+				6DEC08FE23C68B1B00A81DF1 /* Sources */,
+				6DEC08FF23C68B1B00A81DF1 /* Frameworks */,
+				6DEC090023C68B1B00A81DF1 /* Resources */,
+				6DEC093923C6903300A81DF1 /* Run Swiftgen */,
+				2C1D435FEED64EA21001A02F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adidas;
+			productName = Adidas;
+			productReference = 6DEC090223C68B1B00A81DF1 /* Adidas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DEC091723C68B1C00A81DF1 /* AdidasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEC092F23C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "AdidasTests" */;
+			buildPhases = (
+				CB2B522CCF107D8CA82F1A29 /* [CP] Check Pods Manifest.lock */,
+				6DEC091423C68B1C00A81DF1 /* Sources */,
+				6DEC091523C68B1C00A81DF1 /* Frameworks */,
+				6DEC091623C68B1C00A81DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DEC091A23C68B1C00A81DF1 /* PBXTargetDependency */,
+			);
+			name = AdidasTests;
+			productName = AdidasTests;
+			productReference = 6DEC091823C68B1C00A81DF1 /* AdidasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DEC092223C68B1C00A81DF1 /* AdidasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEC093223C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "AdidasUITests" */;
+			buildPhases = (
+				93070751660135FF969B0967 /* [CP] Check Pods Manifest.lock */,
+				6DEC091F23C68B1C00A81DF1 /* Sources */,
+				6DEC092023C68B1C00A81DF1 /* Frameworks */,
+				6DEC092123C68B1C00A81DF1 /* Resources */,
+				7829726107869D10E93D6978 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DEC092523C68B1C00A81DF1 /* PBXTargetDependency */,
+			);
+			name = AdidasUITests;
+			productName = AdidasUITests;
+			productReference = 6DEC092323C68B1C00A81DF1 /* AdidasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DEC08FA23C68B1B00A81DF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = BOLD;
+				TargetAttributes = {
+					6DEC090123C68B1B00A81DF1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					6DEC091723C68B1C00A81DF1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 6DEC090123C68B1B00A81DF1;
+					};
+					6DEC092223C68B1C00A81DF1 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 6DEC090123C68B1B00A81DF1;
+					};
+				};
+			};
+			buildConfigurationList = 6DEC08FD23C68B1B00A81DF1 /* Build configuration list for PBXProject "Adidas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DEC08F923C68B1B00A81DF1;
+			productRefGroup = 6DEC090323C68B1B00A81DF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DEC090123C68B1B00A81DF1 /* Adidas */,
+				6DEC091723C68B1C00A81DF1 /* AdidasTests */,
+				6DEC092223C68B1C00A81DF1 /* AdidasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DEC090023C68B1B00A81DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEC091223C68B1C00A81DF1 /* LaunchScreen.storyboard in Resources */,
+				6DCAA7C823C7DC3B00FCABCA /* HeaderView.xib in Resources */,
+				6DEC093823C68F1900A81DF1 /* Localizable.strings in Resources */,
+				6DEC094723C69A7900A81DF1 /* NewWorkoutCell.xib in Resources */,
+				6D72FAC623C7342800240E0F /* ProfileCell.xib in Resources */,
+				6DEC090F23C68B1C00A81DF1 /* Assets.xcassets in Resources */,
+				6D725A2823C78EBA0043FC1B /* GoalCell.xib in Resources */,
+				6DEC090D23C68B1B00A81DF1 /* Main.storyboard in Resources */,
+				6DEC094F23C69F1A00A81DF1 /* WorkoutCell.xib in Resources */,
+				6D725A1E23C782A50043FC1B /* SetGoalCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC091623C68B1C00A81DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC092123C68B1C00A81DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C1D435FEED64EA21001A02F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adidas/Pods-Adidas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEC093923C6903300A81DF1 /* Run Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftgen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		7829726107869D10E93D6978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adidas-AdidasUITests/Pods-Adidas-AdidasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93070751660135FF969B0967 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adidas-AdidasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F47DFC5D0DFBCA38465FA54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adidas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2B522CCF107D8CA82F1A29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdidasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DEC08FE23C68B1B00A81DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D725A1123C7794F0043FC1B /* GoalsResponse.swift in Sources */,
+				6D725A1623C77C9C0043FC1B /* Constants.swift in Sources */,
+				6D725A1923C77E580043FC1B /* APIEndpoint.swift in Sources */,
+				6DCAA7D323C805D800FCABCA /* WorkoutViewModel.swift in Sources */,
+				6D725A1D23C782A50043FC1B /* SetGoalCell.swift in Sources */,
+				6D725A2C23C792A80043FC1B /* GoalServices.swift in Sources */,
+				6D72FAD223C7552B00240E0F /* ProfileCellViewModel.swift in Sources */,
+				6D72FAC523C7342800240E0F /* ProfileCell.swift in Sources */,
+				6DEC094E23C69F1A00A81DF1 /* WorkoutCell.swift in Sources */,
+				6DEC093C23C690F500A81DF1 /* L10n.swift in Sources */,
+				6D72FAC923C73C7200240E0F /* HealthProfile.swift in Sources */,
+				6DEC094B23C69DC300A81DF1 /* NSObject.swift in Sources */,
+				6DEC090A23C68B1B00A81DF1 /* MenuViewController.swift in Sources */,
+				6D72FAD023C74FF000240E0F /* Date.swift in Sources */,
+				6DCAA7CA23C7DD5B00FCABCA /* UIView.swift in Sources */,
+				6DEC093F23C6927600A81DF1 /* String.swift in Sources */,
+				6DEC090623C68B1B00A81DF1 /* AppDelegate.swift in Sources */,
+				6DCAA7C623C7DC2900FCABCA /* HeaderView.swift in Sources */,
+				6D725A2723C78EBA0043FC1B /* GoalCell.swift in Sources */,
+				6D725A2023C7854F0043FC1B /* NewGoalViewController.swift in Sources */,
+				6DCAA7D123C7E88800FCABCA /* WorkoutServices.swift in Sources */,
+				6D72FACE23C73F0B00240E0F /* HealthKitServices+Profile.swift in Sources */,
+				6D725A1423C77B550043FC1B /* NewWorkoutViewController.swift in Sources */,
+				6D72FABE23C7304E00240E0F /* ProfileViewController.swift in Sources */,
+				6D72FACC23C73C9F00240E0F /* ProfileViewModel.swift in Sources */,
+				6DCAA7CE23C7E72700FCABCA /* Workout.swift in Sources */,
+				6DCAA7CC23C7E15000FCABCA /* UIColor.swift in Sources */,
+				6DEC094623C69A7900A81DF1 /* NewWorkoutCell.swift in Sources */,
+				6D725A2A23C78EFC0043FC1B /* GoalViewModel.swift in Sources */,
+				6D725A3123C7A94D0043FC1B /* NewGoalProtocol.swift in Sources */,
+				6D725A2323C7874F0043FC1B /* UIViewController.swift in Sources */,
+				6DEC090823C68B1B00A81DF1 /* SceneDelegate.swift in Sources */,
+				6D725A0F23C776AE0043FC1B /* NetworkService.swift in Sources */,
+				6DEC095923C6AB7F00A81DF1 /* Alert.swift in Sources */,
+				6DEC095523C6A55100A81DF1 /* HealthKitServices.swift in Sources */,
+				6DEC094923C69D8900A81DF1 /* UITableView.swift in Sources */,
+				6D725A2E23C7A8D10043FC1B /* MenuViewController+UITableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC091423C68B1C00A81DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEC091D23C68B1C00A81DF1 /* AdidasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEC091F23C68B1C00A81DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEC092823C68B1C00A81DF1 /* AdidasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DEC091A23C68B1C00A81DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DEC090123C68B1B00A81DF1 /* Adidas */;
+			targetProxy = 6DEC091923C68B1C00A81DF1 /* PBXContainerItemProxy */;
+		};
+		6DEC092523C68B1C00A81DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DEC090123C68B1B00A81DF1 /* Adidas */;
+			targetProxy = 6DEC092423C68B1C00A81DF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DEC090B23C68B1B00A81DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEC090C23C68B1B00A81DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DEC091023C68B1C00A81DF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEC091123C68B1C00A81DF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DEC092A23C68B1D00A81DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DEC092B23C68B1D00A81DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DEC092D23C68B1D00A81DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46191AF20668106BBCE01D4 /* Pods-Adidas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Adidas/Adidas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Adidas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.Adidas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DEC092E23C68B1D00A81DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253096F07977EF6DC580D495 /* Pods-Adidas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Adidas/Adidas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Adidas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.Adidas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DEC093023C68B1D00A81DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAAABD740D39218281C6E1E1 /* Pods-AdidasTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdidasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.AdidasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adidas.app/Adidas";
+			};
+			name = Debug;
+		};
+		6DEC093123C68B1D00A81DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2F7D9BD134AAEB40BA9512 /* Pods-AdidasTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdidasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.AdidasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adidas.app/Adidas";
+			};
+			name = Release;
+		};
+		6DEC093323C68B1D00A81DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3F3B15E41B449104FCEE60 /* Pods-Adidas-AdidasUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdidasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.AdidasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Adidas;
+			};
+			name = Debug;
+		};
+		6DEC093423C68B1D00A81DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E526DCECC88099DD4F1E46D7 /* Pods-Adidas-AdidasUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AdidasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adidas.filipafaria.AdidasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Adidas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DEC08FD23C68B1B00A81DF1 /* Build configuration list for PBXProject "Adidas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEC092A23C68B1D00A81DF1 /* Debug */,
+				6DEC092B23C68B1D00A81DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEC092C23C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "Adidas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEC092D23C68B1D00A81DF1 /* Debug */,
+				6DEC092E23C68B1D00A81DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEC092F23C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "AdidasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEC093023C68B1D00A81DF1 /* Debug */,
+				6DEC093123C68B1D00A81DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEC093223C68B1D00A81DF1 /* Build configuration list for PBXNativeTarget "AdidasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEC093323C68B1D00A81DF1 /* Debug */,
+				6DEC093423C68B1D00A81DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DEC08FA23C68B1B00A81DF1 /* Project object */;
+}

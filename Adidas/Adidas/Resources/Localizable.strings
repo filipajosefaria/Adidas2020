@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Adidas
+
+  Created by BOLD on 08/01/2020.
+  Copyright © 2020 BOLD. All rights reserved.
+*/
+
+"alert.title" = "Alert";
+"alert.ok" = "OK";
+
+"healthkit.error.unavailable" = "Health kit is not available on your device";
+"healthkit.error.data_unavailable" = "Health kit does not have all the information needed";
+"healthkit.error.general" = "Something went wrong with Health Kit";
+"healthkit.message.permission_not_granted" = "You need to allow Health Kit";
+
+"menu.title" = "Adidas Health";
+"menu.button.profile" = "View Profile";
+"menu.cell.new_workout" = "Tap to start a new workout";
+"menu.cell.set_goal" = "You haven't set any goal yet.\nTAP HERE TO SET YOUR GOAL";
+"menu.header.goal" = "Always remember your goal";
+"menu.header.workouts" = "Your workouts";
+
+"profile.title" = "My Profile";
+"profile.error.getting_profile" = "Something went wrong while getting your profile";
+"profile.label.dateOfBirth" = "Date of Birth";
+"profile.label.gender" = "Gender";
+"profile.gender.female" = "Female";
+"profile.gender.male" = "Male";
+"profile.gender.other" = "Other";
+
+"goals.label.loading" = "Loading your goals";
+"goals.title" = "Select your goal";
+
+"workout.control.run" = "Running";
+"workout.control.walk" = "Walking";
+"workout.button.stop" = "Stop";
+"workout.button.save" = "Save";
+"workout.alert.error" = "Something went wrong while saving your workout";
+"workout.alert.get_error" = "Something went wrong while getting your workouts";
