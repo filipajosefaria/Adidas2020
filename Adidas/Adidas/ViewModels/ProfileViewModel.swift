@@ -40,3 +40,16 @@ class ProfileViewModel {
         dateOfBirthString = date.formatWith()
     }
 }
+
+
+func toViewModel(profile: HealthProfile) -> [ProfileCellViewModel] {
+    
+    let profileModel = ProfileViewModel(profile: profile)
+    let dateModel = ProfileCellViewModel(title: L10n.Profile.Label.dateOfBirth, value: profileModel.dateOfBirthString)
+    let genderModel = ProfileCellViewModel(title: L10n.Profile.Label.gender , value: profileModel.genderString)
+
+    return [dateModel, genderModel]
+}
+
+
+

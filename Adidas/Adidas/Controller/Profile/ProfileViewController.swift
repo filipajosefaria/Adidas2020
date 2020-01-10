@@ -30,22 +30,14 @@ class ProfileViewController: UIViewController {
     
     private func requestUserProfile() {
         do {
-            let profile = try HealthKitServices.getUserProfile()
-            setupInfo(with: profile)
+            profileInfo = try HealthKitServices.getUserProfile()
+            profileTableView.reloadData()
         } catch {
             Alert.showBasicAlert(with: L10n.Profile.Error.gettingProfile, on: self)
         }
         
     }
-    
-    private func setupInfo(with profile: HealthProfile) {
-        let profileModel = ProfileViewModel(profile: profile)
-        let dateModel = ProfileCellViewModel(title: L10n.Profile.Label.dateOfBirth, value: profileModel.dateOfBirthString)
-        let genderModel = ProfileCellViewModel(title: L10n.Profile.Label.gender , value: profileModel.genderString)
-        
-        profileInfo = [dateModel, genderModel]
-        profileTableView.reloadData()
-    }
+
 }
 
 extension ProfileViewController: UITableViewDataSource {

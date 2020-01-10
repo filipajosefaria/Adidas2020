@@ -10,7 +10,7 @@ import HealthKit
 
 extension HealthKitServices {
     
-     class func getUserProfile() throws -> HealthProfile {
+     class func getUserProfile() throws -> [ProfileCellViewModel] {
         
         let healthKitStore = HKHealthStore()
         
@@ -29,7 +29,8 @@ extension HealthKitServices {
         }
         
         let healthProfile = HealthProfile(dateOfBirth: birthday, gender: gender)
-        return healthProfile
+        let info = toViewModel(profile: healthProfile)
+        return info
         
     }
   
