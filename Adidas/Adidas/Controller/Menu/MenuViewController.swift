@@ -20,6 +20,12 @@ class MenuViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        getWorkouts()
+    }
+    
     private func setupHeatlhKit() {
         
         do {
@@ -66,6 +72,16 @@ class MenuViewController: UIViewController {
         workoutTableView.register(cellType: GoalCell.self)
     }
 
+}
+
+extension MenuViewController {
+    
+    private func getWorkouts() {
+        
+        WorkoutServices.getUserWorkouts { (workouts, error) in
+            print("workouts: \(workouts)")
+        }
+    }
 }
 
 extension MenuViewController: NewGoalDelegate {

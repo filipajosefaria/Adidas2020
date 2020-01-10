@@ -12,9 +12,6 @@ class Workout {
     var start: Date?
     var end: Date?
     var type: HKWorkoutActivityType?
-    static var quantityType: HKQuantityType? = HKQuantityType.quantityType(
-    forIdentifier: .activeEnergyBurned)
-    static var quantity = HKQuantity(unit: HKUnit.kilocalorie(), doubleValue: 0)
     
     var finished: Bool {
         return end != nil
